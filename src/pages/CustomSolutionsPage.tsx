@@ -90,7 +90,7 @@ const BoxCalculator = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         {(["length", "width", "height", "quantity"] as const).map((d) => (
           <div key={d}>
-            <label className="block text-sm font-body font-medium text-foreground mb-2 capitalize">{d} (cm)</label>
+            <label className="block text-sm font-body font-medium text-foreground mb-2 capitalize">{d === "quantity" ? "Quantity (pcs)" : `${d} (cm)`}</label>
             <input
               type="number"
               value={dims[d]}

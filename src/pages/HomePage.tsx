@@ -159,10 +159,23 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Manufacturing Capabilities */}
+      {/* Industrial Capacity */}
       <section className="section-padding gradient-navy">
         <div className="container mx-auto">
-          <SectionHeading title="Manufacturing Capabilities" subtitle="State-of-the-art manufacturing facility with advanced corrugation and printing machinery." light />
+          <SectionHeading title="Industrial Capacity" subtitle="State-of-the-art manufacturing facility with advanced machinery and large-scale production capability." light />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
+            {[
+              { num: "50,000+", label: "Boxes Per Day" },
+              { num: "25+", label: "Years Experience" },
+              { num: "100+", label: "Business Clients" },
+              { num: "6", label: "Product Lines" },
+            ].map((s) => (
+              <div key={s.label} className="text-center p-6 rounded-xl bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10">
+                <div className="text-3xl md:text-4xl font-heading font-bold text-orange mb-2">{s.num}</div>
+                <div className="text-sm font-body text-primary-foreground/80">{s.label}</div>
+              </div>
+            ))}
+          </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {capabilities.map((cap) => (
               <div key={cap} className="flex items-center gap-3 p-4 rounded-lg bg-primary-foreground/5 backdrop-blur-sm">
@@ -170,6 +183,52 @@ const HomePage = () => {
                 <span className="text-primary-foreground font-body">{cap}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Client Logos */}
+      <section className="section-padding">
+        <div className="container mx-auto">
+          <SectionHeading title="Trusted By Leading Brands" subtitle="We serve businesses across e-commerce, pharma, electronics, food, and FMCG industries." />
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
+            {["TechPack Electronics", "FreshBite Foods", "MedPharma Solutions", "SwiftShip Logistics", "GreenLeaf Organics", "UrbanBox E-commerce"].map((name) => (
+              <div key={name} className="bg-card rounded-xl p-6 border border-border flex items-center justify-center min-h-[100px] hover:shadow-md hover:border-orange/30 transition-all">
+                <span className="text-sm font-heading font-semibold text-muted-foreground text-center">{name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Tools */}
+      <section className="section-padding bg-surface">
+        <div className="container mx-auto">
+          <SectionHeading title="Quick Tools" subtitle="Use our online tools to estimate pricing and find the right box for your needs." />
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-card rounded-xl p-8 border border-border text-center hover:shadow-lg transition-all">
+              <Calculator className="w-10 h-10 text-orange mx-auto mb-4" />
+              <h3 className="font-heading font-semibold text-foreground mb-2">Instant Quote</h3>
+              <p className="text-sm text-muted-foreground font-body mb-4">Get instant price estimates online</p>
+              <Button variant="orange" size="sm" asChild><Link to="/instant-quote">Try Now</Link></Button>
+            </div>
+            <div className="bg-card rounded-xl p-8 border border-border text-center hover:shadow-lg transition-all">
+              <Box className="w-10 h-10 text-orange mx-auto mb-4" />
+              <h3 className="font-heading font-semibold text-foreground mb-2">Box Calculator</h3>
+              <p className="text-sm text-muted-foreground font-body mb-4">Find the perfect box size</p>
+              <Button variant="orange" size="sm" asChild><Link to="/custom-solutions">Calculate</Link></Button>
+            </div>
+            <div className="bg-card rounded-xl p-8 border border-border text-center hover:shadow-lg transition-all">
+              <Download className="w-10 h-10 text-orange mx-auto mb-4" />
+              <h3 className="font-heading font-semibold text-foreground mb-2">Product Catalog</h3>
+              <p className="text-sm text-muted-foreground font-body mb-4">Download our full catalog (PDF)</p>
+              <Button variant="orange" size="sm" onClick={() => {
+                const link = document.createElement("a");
+                link.href = "/Dr-Jain-Print-Pack-Catalog.pdf";
+                link.download = "Dr-Jain-Print-Pack-Catalog.pdf";
+                link.click();
+              }}>Download PDF</Button>
+            </div>
           </div>
         </div>
       </section>

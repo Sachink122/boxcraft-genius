@@ -10,6 +10,7 @@ const navLinks = [
   { label: "Industries", path: "/industries" },
   { label: "Custom Solutions", path: "/custom-solutions" },
   { label: "Manufacturing", path: "/manufacturing" },
+  { label: "Instant Quote", path: "/instant-quote" },
   { label: "Gallery", path: "/gallery" },
   { label: "Contact", path: "/contact" },
 ];
