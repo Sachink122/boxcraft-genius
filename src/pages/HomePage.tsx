@@ -191,7 +191,7 @@ const HomePage = () => {
       <section className="section-padding">
         <div className="container mx-auto">
           <SectionHeading title="Trusted By Leading Brands" subtitle="We serve businesses across e-commerce, pharma, electronics, food, and FMCG industries." />
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 md:gap-6">
             {["TechPack Electronics", "FreshBite Foods", "MedPharma Solutions", "SwiftShip Logistics", "GreenLeaf Organics", "UrbanBox E-commerce"].map((name) => (
               <div key={name} className="bg-card rounded-xl p-6 border border-border flex items-center justify-center min-h-[100px] hover:shadow-md hover:border-orange/30 transition-all">
                 <span className="text-sm font-heading font-semibold text-muted-foreground text-center">{name}</span>
