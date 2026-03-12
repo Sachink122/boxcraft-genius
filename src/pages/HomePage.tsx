@@ -57,7 +57,7 @@ const HomePage = () => {
             <span className="inline-block px-4 py-1.5 rounded-full bg-orange/20 text-orange text-sm font-body font-medium mb-6">
               Trusted Since 1998
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-6">
               Premium Corrugated Box <span className="text-gradient">Manufacturing</span> Solutions
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/85 font-body mb-8 leading-relaxed max-w-2xl">

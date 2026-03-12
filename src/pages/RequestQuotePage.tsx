@@ -80,7 +80,7 @@ const RequestQuotePage = () => {
 
             <div>
               <label className={labelClass}>Box Dimensions (cm)</label>
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <input className={inputClass} value={form.length} onChange={(e) => setForm({ ...form, length: e.target.value })} placeholder="Length" type="number" />
                 <input className={inputClass} value={form.width} onChange={(e) => setForm({ ...form, width: e.target.value })} placeholder="Width" type="number" />
                 <input className={inputClass} value={form.height} onChange={(e) => setForm({ ...form, height: e.target.value })} placeholder="Height" type="number" />

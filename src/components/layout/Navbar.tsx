@@ -24,7 +24,7 @@ const Navbar = () => {
       {/* Top bar */}
       <div className="gradient-navy">
         <div className="container mx-auto px-4 py-2 flex justify-between items-center text-primary-foreground text-sm">
-          <span className="hidden md:block font-body">Trusted Corrugated Box Manufacturer Since 1998</span>
+          <span className="hidden sm:block font-body truncate">Trusted Corrugated Box Manufacturer Since 1998</span>
           <a href="tel:+918888860797" className="flex items-center gap-2 hover:text-orange transition-colors">
             <Phone className="w-3 h-3" />
             +91 8888860797

@@ -113,7 +113,7 @@ const InstantQuotePage = () => {
 
               <div>
                 <label className={labelClass}>Box Dimensions (cm)</label>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   <input className={inputClass} type="number" placeholder="Length" value={form.length} onChange={(e) => setForm({ ...form, length: e.target.value })} />
                   <input className={inputClass} type="number" placeholder="Width" value={form.width} onChange={(e) => setForm({ ...form, width: e.target.value })} />
                   <input className={inputClass} type="number" placeholder="Height" value={form.height} onChange={(e) => setForm({ ...form, height: e.target.value })} />
