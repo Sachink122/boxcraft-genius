@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import SectionHeading from "@/components/SectionHeading";
-import { Package, Printer, Box, Truck, Settings, Scissors, ShoppingCart, Cpu, Pill, Apple, UtensilsCrossed, Factory, CheckCircle, Star, ArrowRight, Phone } from "lucide-react";
+import { Package, Printer, Box, Truck, Settings, Scissors, ShoppingCart, Cpu, Pill, Apple, UtensilsCrossed, Factory, CheckCircle, Star, ArrowRight, Phone, Download, Calculator } from "lucide-react";
 import heroImg from "@/assets/hero-factory.jpg";
 import corrugatedImg from "@/assets/products-corrugated.jpg";
 import printedImg from "@/assets/products-printed.jpg";
