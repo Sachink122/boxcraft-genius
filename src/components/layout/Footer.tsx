@@ -30,6 +30,8 @@ const Footer = () => (
               { label: "Products", path: "/products" },
               { label: "Industries", path: "/industries" },
               { label: "Custom Solutions", path: "/custom-solutions" },
+              { label: "Instant Quote", path: "/instant-quote" },
+              { label: "Bulk Order", path: "/bulk-order" },
               { label: "Request Quote", path: "/request-quote" },
             ].map((l) => (
               <li key={l.path}>
