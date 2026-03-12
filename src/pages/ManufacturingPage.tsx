@@ -25,7 +25,7 @@ const ManufacturingPage = () => (
 
     <section className="section-padding">
       <div className="container mx-auto max-w-4xl">
-        <SectionHeading title="Our Process" subtitle="Every box goes through a rigorous 8-step manufacturing process to ensure top quality." />
+        <SectionHeading title="Our 7-Step Process" subtitle="Every box goes through a rigorous manufacturing process to ensure top quality." />
         <div className="relative">
           {/* Timeline line */}
           <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-border hidden md:block" />
