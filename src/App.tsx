@@ -12,6 +12,8 @@ import CustomSolutionsPage from "./pages/CustomSolutionsPage";
 import ManufacturingPage from "./pages/ManufacturingPage";
 import GalleryPage from "./pages/GalleryPage";
 import RequestQuotePage from "./pages/RequestQuotePage";
+import InstantQuotePage from "./pages/InstantQuotePage";
+import BulkOrderPage from "./pages/BulkOrderPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 
