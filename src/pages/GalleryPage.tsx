@@ -23,7 +23,7 @@ const GalleryPage = () => (
   <>
     <section className="gradient-navy section-padding">
       <div className="container mx-auto text-center">
-        <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-4">Product Gallery</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-4">Product Gallery</h1>
         <p className="text-lg text-primary-foreground/80 font-body max-w-2xl mx-auto">
           Explore our wide range of corrugated packaging products and manufacturing facility
         </p>

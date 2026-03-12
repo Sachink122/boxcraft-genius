@@ -15,7 +15,7 @@ const CustomSolutionsPage = () => (
   <>
     <section className="gradient-navy section-padding">
       <div className="container mx-auto text-center">
-        <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-4">Custom Box Solutions</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-4">Custom Box Solutions</h1>
         <p className="text-lg text-primary-foreground/80 font-body max-w-2xl mx-auto">
           Tailor-made packaging designed specifically for your products and brand
         </p>
