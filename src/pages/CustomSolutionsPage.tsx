@@ -63,13 +63,14 @@ const CustomSolutionsPage = () => (
 import { useState } from "react";
 
 const BoxCalculator = () => {
-  const [dims, setDims] = useState({ length: "", width: "", height: "" });
+  const [dims, setDims] = useState({ length: "", width: "", height: "", quantity: "" });
   const [result, setResult] = useState<string | null>(null);
 
   const calculate = () => {
     const l = parseFloat(dims.length);
     const w = parseFloat(dims.width);
     const h = parseFloat(dims.height);
+    const qty = parseInt(dims.quantity) || 0;
     if (isNaN(l) || isNaN(w) || isNaN(h) || l <= 0 || w <= 0 || h <= 0) {
       setResult("Please enter valid dimensions.");
       return;
@@ -79,15 +80,17 @@ const BoxCalculator = () => {
     const boxH = h + 2;
     const volume = (boxL * boxW * boxH) / 1000;
     const ply = volume > 50 ? "5-ply or 7-ply" : volume > 10 ? "5-ply" : "3-ply";
-    setResult(`Recommended box: ${boxL} × ${boxW} × ${boxH} cm (incl. 1cm padding). Volume: ${volume.toFixed(1)}L. Suggested: ${ply} corrugated board.`);
+    const weight = volume > 50 ? "Heavy-duty" : volume > 10 ? "Medium" : "Light";
+    const qtyText = qty > 0 ? ` | Quantity: ${qty.toLocaleString("en-IN")} boxes` : "";
+    setResult(`Recommended box: ${boxL} × ${boxW} × ${boxH} cm (incl. 1cm padding). Volume: ${volume.toFixed(1)}L. Suggested: ${ply} corrugated board. Category: ${weight} duty.${qtyText}`);
   };
 
   return (
     <div className="bg-card rounded-xl p-8 border border-border">
-      <div className="grid grid-cols-3 gap-4 mb-6">
-        {(["length", "width", "height"] as const).map((d) => (
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+        {(["length", "width", "height", "quantity"] as const).map((d) => (
           <div key={d}>
-            <label className="block text-sm font-body font-medium text-foreground mb-2 capitalize">{d} (cm)</label>
+            <label className="block text-sm font-body font-medium text-foreground mb-2 capitalize">{d === "quantity" ? "Quantity (pcs)" : `${d} (cm)`}</label>
             <input
               type="number"
               value={dims[d]}

@@ -1,15 +1,14 @@
 import SectionHeading from "@/components/SectionHeading";
-import { ClipboardList, Ruler, Settings, Printer, Scissors, PackageCheck, Truck, CheckCircle } from "lucide-react";
+import { Cylinder, Layers, Scissors, Printer, Box, FoldVertical, CheckCircle } from "lucide-react";
 
 const steps = [
-  { icon: ClipboardList, title: "Order Consultation", desc: "Understanding your product specifications, quantity, and packaging requirements." },
-  { icon: Ruler, title: "Design & Planning", desc: "Creating custom box designs with exact dimensions, printing artwork, and structural planning." },
-  { icon: Settings, title: "Material Selection", desc: "Selecting the right grade of corrugated board, paper quality, and flute type for optimal strength." },
-  { icon: Printer, title: "Printing", desc: "Multi-color flexo or offset printing of your brand design, logos, and product information." },
-  { icon: Scissors, title: "Cutting & Creasing", desc: "Precision die-cutting, slotting, and creasing to create the box structure with clean folds." },
-  { icon: PackageCheck, title: "Quality Testing", desc: "Burst strength, compression, and drop tests to ensure boxes meet performance standards." },
-  { icon: Truck, title: "Packaging & Dispatch", desc: "Careful packaging of finished boxes and timely delivery to your facility." },
-  { icon: CheckCircle, title: "After-Sales Support", desc: "Ongoing quality monitoring and support for repeat orders and design improvements." },
+  { icon: Cylinder, title: "Paper Roll Selection", desc: "Selecting the right grade of kraft paper and fluting medium rolls based on required strength and finish." },
+  { icon: Layers, title: "Corrugation Process", desc: "Feeding paper through corrugation rollers to create the fluted medium, then bonding with liner sheets using starch-based adhesive." },
+  { icon: Scissors, title: "Sheet Cutting", desc: "Cutting large corrugated sheets into precise dimensions as per box design specifications." },
+  { icon: Printer, title: "Printing", desc: "Multi-color flexo or offset printing of your brand logo, product details, and design artwork on the box surface." },
+  { icon: Box, title: "Die Cutting", desc: "Precision die-cutting and creasing to create the exact box shape, slots, flaps, and fold lines." },
+  { icon: FoldVertical, title: "Folding & Gluing", desc: "Machine folding along creased lines and applying adhesive to join box panels into the final structure." },
+  { icon: CheckCircle, title: "Final Quality Check", desc: "Rigorous quality inspection including burst strength test, compression test, and visual inspection before dispatch." },
 ];
 
 const ManufacturingPage = () => (
@@ -26,7 +25,7 @@ const ManufacturingPage = () => (
 
     <section className="section-padding">
       <div className="container mx-auto max-w-4xl">
-        <SectionHeading title="Our Process" subtitle="Every box goes through a rigorous 8-step manufacturing process to ensure top quality." />
+        <SectionHeading title="Our 7-Step Process" subtitle="Every box goes through a rigorous manufacturing process to ensure top quality." />
         <div className="relative">
           {/* Timeline line */}
           <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-border hidden md:block" />
