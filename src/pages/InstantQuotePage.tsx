@@ -70,7 +70,7 @@ const InstantQuotePage = () => {
     <>
       <section className="gradient-navy section-padding">
         <div className="container mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-4">Instant Quote Generator</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-4">Instant Quote Generator</h1>
           <p className="text-lg text-primary-foreground/80 font-body max-w-2xl mx-auto">
             Get an instant price estimate for your packaging requirements
           </p>
@@ -113,7 +113,7 @@ const InstantQuotePage = () => {
 
               <div>
                 <label className={labelClass}>Box Dimensions (cm)</label>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   <input className={inputClass} type="number" placeholder="Length" value={form.length} onChange={(e) => setForm({ ...form, length: e.target.value })} />
                   <input className={inputClass} type="number" placeholder="Width" value={form.width} onChange={(e) => setForm({ ...form, width: e.target.value })} />
                   <input className={inputClass} type="number" placeholder="Height" value={form.height} onChange={(e) => setForm({ ...form, height: e.target.value })} />

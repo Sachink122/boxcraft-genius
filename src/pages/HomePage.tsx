@@ -57,7 +57,7 @@ const HomePage = () => {
             <span className="inline-block px-4 py-1.5 rounded-full bg-orange/20 text-orange text-sm font-body font-medium mb-6">
               Trusted Since 1998
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-6">
               Premium Corrugated Box <span className="text-gradient">Manufacturing</span> Solutions
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/85 font-body mb-8 leading-relaxed max-w-2xl">
@@ -191,7 +191,7 @@ const HomePage = () => {
       <section className="section-padding">
         <div className="container mx-auto">
           <SectionHeading title="Trusted By Leading Brands" subtitle="We serve businesses across e-commerce, pharma, electronics, food, and FMCG industries." />
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 md:gap-6">
             {["TechPack Electronics", "FreshBite Foods", "MedPharma Solutions", "SwiftShip Logistics", "GreenLeaf Organics", "UrbanBox E-commerce"].map((name) => (
               <div key={name} className="bg-card rounded-xl p-6 border border-border flex items-center justify-center min-h-[100px] hover:shadow-md hover:border-orange/30 transition-all">
                 <span className="text-sm font-heading font-semibold text-muted-foreground text-center">{name}</span>

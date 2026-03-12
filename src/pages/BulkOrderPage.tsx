@@ -30,7 +30,7 @@ const BulkOrderPage = () => {
     <>
       <section className="gradient-navy section-padding">
         <div className="container mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-4">Bulk Order & Consultation</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-4">Bulk Order & Consultation</h1>
           <p className="text-lg text-primary-foreground/80 font-body max-w-2xl mx-auto">
             Special pricing for bulk orders. Get a free packaging consultation from our experts.
           </p>
@@ -91,7 +91,7 @@ const BulkOrderPage = () => {
 
               <div>
                 <label className={labelClass}>Box Dimensions (cm)</label>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   <input className={inputClass} type="number" placeholder="Length" value={form.length} onChange={(e) => setForm({ ...form, length: e.target.value })} />
                   <input className={inputClass} type="number" placeholder="Width" value={form.width} onChange={(e) => setForm({ ...form, width: e.target.value })} />
                   <input className={inputClass} type="number" placeholder="Height" value={form.height} onChange={(e) => setForm({ ...form, height: e.target.value })} />

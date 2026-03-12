@@ -15,7 +15,7 @@ const CustomSolutionsPage = () => (
   <>
     <section className="gradient-navy section-padding">
       <div className="container mx-auto text-center">
-        <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-4">Custom Box Solutions</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-4">Custom Box Solutions</h1>
         <p className="text-lg text-primary-foreground/80 font-body max-w-2xl mx-auto">
           Tailor-made packaging designed specifically for your products and brand
         </p>
@@ -87,7 +87,7 @@ const BoxCalculator = () => {
 
   return (
     <div className="bg-card rounded-xl p-8 border border-border">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         {(["length", "width", "height", "quantity"] as const).map((d) => (
           <div key={d}>
             <label className="block text-sm font-body font-medium text-foreground mb-2 capitalize">{d === "quantity" ? "Quantity (pcs)" : `${d} (cm)`}</label>
