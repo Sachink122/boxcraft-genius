@@ -68,7 +68,7 @@ const HomePage = () => {
                 <Link to="/request-quote">Get a Free Quote <ArrowRight className="w-5 h-5" /></Link>
               </Button>
               <Button variant="heroOutline" size="lg" asChild>
-                <a href="tel:+918888860797"><Phone className="w-5 h-5" /> Call Now</a>
+                <a href="tel:+918668398960"><Phone className="w-5 h-5" /> Call Now</a>
               </Button>
             </div>
           </div>
@@ -270,7 +270,7 @@ const HomePage = () => {
               <Link to="/request-quote">Request a Quote</Link>
             </Button>
             <Button variant="heroOutline" size="lg" asChild>
-              <a href="tel:+918888860797"><Phone className="w-5 h-5" /> Call +91 8888860797</a>
+              <a href="tel:+918668398960"><Phone className="w-5 h-5" /> Call +91 8668398960</a>
             </Button>
           </div>
         </div>
