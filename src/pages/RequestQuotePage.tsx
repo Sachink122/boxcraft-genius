@@ -18,7 +18,7 @@ const RequestQuotePage = () => {
     const whatsappMsg = encodeURIComponent(
       `*Quote Request*\nName: ${form.name}\nCompany: ${form.company}\nPhone: ${form.phone}\nProduct: ${form.product}\nQty: ${form.quantity}\nSize: ${form.length}×${form.width}×${form.height}cm\nPly: ${form.ply}\nPrinting: ${form.printing}\nMessage: ${form.message}`
     );
-    window.open(`https://wa.me/918888860797?text=${whatsappMsg}`, "_blank");
+    window.open(`https://wa.me/918668398960?text=${whatsappMsg}`, "_blank");
     toast.success("Redirecting to WhatsApp...");
   };
 
