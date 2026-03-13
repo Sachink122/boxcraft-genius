@@ -23,8 +23,8 @@ const ContactPage = () => (
             <div className="space-y-6">
               {[
                 { icon: MapPin, title: "Our Address", text: "Building No. 3, Survey No. 68/3, Naik Pada, Opposite Minakshi Industrial Estate, Near Raj Prabha Param Industrial Estate, Waliv, Vasai East, Palghar - 401208, Maharashtra, India" },
-                { icon: Phone, title: "Phone", text: "+91 8888860797", href: "tel:+918888860797" },
-                { icon: Mail, title: "Email", text: "info@drjainprintpack.com", href: "mailto:info@drjainprintpack.com" },
+                { icon: Phone, title: "Phone", text: "+91 8668398960", href: "tel:+918668398960" },
+                { icon: Mail, title: "Email", text: "sgsk1sachin@gmail.com", href: "mailto:sgsk1sachin@gmail.com" },
                 { icon: Clock, title: "Working Hours", text: "Monday - Saturday: 9:00 AM - 7:00 PM" },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4">
@@ -48,7 +48,7 @@ const ContactPage = () => (
                 <Link to="/request-quote">Request Quote</Link>
               </Button>
               <Button variant="outline" asChild>
-                <a href="tel:+918888860797"><Phone className="w-4 h-4" /> Call Now</a>
+                <a href="tel:+918668398960"><Phone className="w-4 h-4" /> Call Now</a>
               </Button>
             </div>
           </div>
