@@ -19,7 +19,7 @@ const BulkOrderPage = () => {
     const msg = encodeURIComponent(
       `*Bulk Order Inquiry*\nName: ${form.name}\nCompany: ${form.company}\nPhone: ${form.phone}\nEmail: ${form.email}\nBox Type: ${form.boxType}\nSize: ${form.length}×${form.width}×${form.height}cm\nQty: ${form.quantity}\nPly: ${form.ply}\nPrinting: ${form.printing}\nDelivery: ${form.deliveryLocation}\nMessage: ${form.message}`
     );
-    window.open(`https://wa.me/918888860797?text=${msg}`, "_blank");
+    window.open(`https://wa.me/918668398960?text=${msg}`, "_blank");
     toast.success("Redirecting to WhatsApp...");
   };
 
